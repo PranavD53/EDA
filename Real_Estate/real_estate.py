@@ -1,3 +1,35 @@
+'''
+Task 1 — Load & Inspect the Dataset
+1.	Load the dataset  into your notebook.
+2.	Display the first 5 and last 5 rows of the dataset.
+3.	Print dataset shape (rows, columns).
+4.	Print dataset information using .info().
+5.	Identify basic data types of all columns.
+Task 2 — Clean the Dataset
+Identify and count missing values in each column.
+Drop column(s) that are irrelevant for price analysis (example: society or unnamed columns).
+Handle missing values in numeric columns such as bath, balcony, etc. (use either dropna() or fillna() depending on your reasoning).
+Convert total_sqft to numeric — handle values like "2100 - 2850" by converting them to an average or a single number.
+Remove duplicate rows.
+6. Reset the DataFrame index after cleaning
+Task 3 — Data Analysis
+Identify the number of unique locations in the dataset.
+Compute the average house price for each location.
+Find the location with the highest average house price.
+Analyze the correlation between numeric columns such as total_sqft, bath, and price. Comment on any strong correlations you find.
+Task 4 — Data Visualization
+Use the specific visualization types mentioned for each question.
+Price Distribution:
+Plot the distribution of the price column using a Histogram + KDE curve.
+Relationship Between Area and Price:
+Visualize the relationship between total_sqft and price using a Scatter Plot.
+Effect of Bathrooms on Price:
+Show how bath count affects house prices using a Box Plot.
+Top 10 Most Expensive Locations:
+Plot the Top 10 locations with highest average price using a Bar Chart.
+Correlation Between Numeric Columns:
+Create a Heatmap to visualize correlations among numeric features (price, total_sqft, bath, balcony, etc.).
+'''
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
